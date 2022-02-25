@@ -1,0 +1,91 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp_Sixth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            double valorProd, Total = 0;
+
+            for (i = 0; i <= 8; i++)
+            {
+                Console.WriteLine("Digite el valor del producto "+ i);
+                valorProd = double.Parse(Console.ReadLine());
+                Total = Total + valorProd;
+
+            }
+
+            ;
+            Console.WriteLine("El total de la compra es: "+Total);
+            Console.ReadKey();
+            
+        }
+    }
+}
+
+///Cuarto
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp_Fourth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sueldo;
+            Console.WriteLine("<<<<<<<<<<<<<PROGRAMA SUELDO>>>>>>>>>>");
+
+            Console.Write("Digite el sueldo de la persona...");
+            sueldo = Double.Parse(Console.ReadLine());
+
+            if(sueldo>30000)
+            {
+                Console.Write("La persona debe pagar impuestos");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+/// Quinto
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp_Fiveth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            double sum,prom,temp,cant;
+            
+            sum = 0;
+            for(i = 1; i <= 7; i++)
+            {
+                Console.WriteLine("Digite una temperatura");
+                temp = double.Parse(Console.ReadLine());
+                sum = sum + temp;
+                
+            }
+            
+            prom = (sum / 7);
+            Console.Write("El promedio de las temperaturas ingresadas es: "+prom);
+            Console.ReadKey();
+        }
+    }
+}
